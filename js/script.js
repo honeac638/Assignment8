@@ -40,8 +40,8 @@ function displayResult() {
     let selectedButtons = document.querySelectorAll(".answer-btn.selected");
 
     // Make sure the user answered at least one question
-    if (selectedButtons.length === 0) {
-        alert("Please answer at least one question before viewing your sorting results!");
+    if (selectedButtons.length < questionBlocks.length) {
+        alert("Please answer all questions before viewing your sorting results!");
         return;
     }
 
